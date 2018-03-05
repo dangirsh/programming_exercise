@@ -20,16 +20,14 @@ https://en.wikipedia.org/wiki/Topological_sorting
 
 * Problem
 
-Write function f:
+Write function f(G, T) => (G', T')
 
-G: Graph
-T: List of vertices (topological sort)
+- G: Graph
+- T: List of vertices (topological sort)
 
-f(G, T) => (G', T')
+- After each execution of f:
+- |V_G| >= |V_G'|
+- |T| <= |T'|
 
-|V_G| >= |V_G'|
-|T| <= |T'|
-
-
-Initial Value: f(G, [])
-Fixed point of f, with that initial value = (Empty graph, topological sort of G)
+- Initial Value: f(G, [])
+- Fixed point of f, with that initial value = (Empty graph, topological sort of G)
