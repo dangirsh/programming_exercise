@@ -1,0 +1,35 @@
+* Fixed points
+
+f(x) = x
+=> f(f(x)) = x
+
+
+* DAGs
+
+G(V, E)
+
+E subset VxV
+
+E directed
+
+No cycles
+
+** Topological Sort
+
+https://en.wikipedia.org/wiki/Topological_sorting
+
+* Problem
+
+Write function f:
+
+G: Graph
+T: List of vertices (topological sort)
+
+f(G, T) => (G', T')
+
+|V_G| >= |V_G'|
+|T| <= |T'|
+
+
+Initial Value: f(G, [])
+Fixed point of f, with that initial value = (Empty graph, topological sort of G)
